@@ -1,5 +1,8 @@
 require "./image_colors/*"
+require "kemal"
 
-module ImageColors
-  # TODO Put your code here
+get "/" do
+  render "src/views/index.html.ecr", "src/views/layouts/layout.ecr"
 end
+
+Kemal.run(8080)
